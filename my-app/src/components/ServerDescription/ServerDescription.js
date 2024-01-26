@@ -1,19 +1,42 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./ServerDescription.css";
 
 function ServerDescription() {
+  const [activeCard, setActiveCard] = useState("memberCount");
+  const [fadeOut, setFadeOut] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFadeOut(true);
+
+      // Wait for fadeOut animation to finish before fading in the next card
+      setTimeout(() => {
+        setActiveCard((prevActiveCard) =>
+          prevActiveCard === "memberCount" ? "messageToday" : "memberCount"
+        );
+        setFadeOut(false);
+      }, 1000); // This timeout should match the duration of your fadeOut animation
+    }, 5000); // Adjust this interval as needed
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="server-description">
       <h2>Just your typical NBA Discord Server</h2>
       <div className="stats-container">
-        <div className="stat-card">
-          <h3>Server Member Count:</h3>
-          <p>24,000+</p>
-        </div>
-        <div className="stat-card">
-          <h3>Message Today:</h3>
-          <p>8,000+</p>
-        </div>
+        {activeCard === "memberCount" && (
+          <div className={`stat-card ${!fadeOut ? "fade-in" : "fade-out"}`}>
+            <h3>Server Member Count:</h3>
+            <p>24,000+</p>
+          </div>
+        )}
+        {activeCard === "messageToday" && (
+          <div className={`stat-card ${!fadeOut ? "fade-in" : "fade-out"}`}>
+            <h3>Message Today:</h3>
+            <p>8,000+</p>
+          </div>
+        )}
       </div>
     </div>
   );

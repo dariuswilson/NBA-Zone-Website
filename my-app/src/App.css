@@ -1,21 +1,14 @@
-.App {
-  background-color: gray;
+.content-layout {
+  display: flex;
+  margin: 20px;
 }
 
-h1 {
-  color: #333; /* Dark color for the text */
-  font-family: "Arial", sans-serif; /* Modern font */
-  margin-bottom: 15px; /* Space between title and buttons */
+.main-content {
+  flex-grow: 1;
+  margin-right: 20px; /* Spacing between main content and sidebar */
 }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-}
-
-#root {
-  height: 100%;
+.sidebar {
+  width: 300px; /* Or however wide you want your sidebar to be */
+  /* Optional: Add a box-shadow or border to distinguish the sidebar */
 }

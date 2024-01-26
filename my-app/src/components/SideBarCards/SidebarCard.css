@@ -1,0 +1,11 @@
+/* SidebarCard.css */
+.sidebar-card {
+  background-color: #2c2f33; /* Dark background for card */
+  padding: 15px;
+  margin-bottom: 15px; /* Spacing between cards */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  color: white; /* Text color */
+}
+
+/* You can add more styling for the title, content, or other elements here */

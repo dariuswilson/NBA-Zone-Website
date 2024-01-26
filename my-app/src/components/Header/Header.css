@@ -1,6 +1,8 @@
 .header {
   background-color: #23272a; /* Discord dark grey */
-  padding: 1rem; /* 16px */
+  width: 100%; /* This ensures the header extends to full width */
+  margin: 0; /* Resets any default margin */
+  padding: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -67,4 +69,17 @@
   .header-button {
     margin: 5px; /* Smaller margin for smaller screens */
   }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  /* This ensures the page takes up full viewport height */
+  height: 100%;
+  /* This ensures the page takes up full viewport width */
+  width: 100%;
+  /* This removes any default browser styling that might add unwanted space */
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
