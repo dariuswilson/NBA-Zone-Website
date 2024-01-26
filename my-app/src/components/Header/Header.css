@@ -8,17 +8,28 @@
 }
 
 .header-content {
-  width: 100%;
-  max-width: 1200px; /* Max width for the content inside header */
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Max width for the content inside header */
+  margin: 0 auto;
 }
 
-.logo h1 {
+.logo-container {
+  display: flex; /* Aligns logo and title side by side */
+  align-items: center; /* Aligns items vertically */
+}
+
+.logo {
+  max-width: 100px; /* Adjust size as needed */
+  border-radius: 50%; /* Makes the image rounded */
+}
+
+.logo-container h1 {
   font-size: 2.5em;
   color: #ff9800; /* Logo text color */
+  margin-left: 20px; /* Spacing between logo and text */
 }
 
 .navigation {

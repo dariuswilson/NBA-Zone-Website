@@ -1,14 +1,15 @@
 import React from "react";
 import "../../App.css"; // Assuming this contains global styles
 import "./Header.css"; // This will contain your new header styles
+import logo from "./nbazone.png";
 
 function Header() {
   return (
     <header className="header">
       <div className="header-content">
-        <div className="logo">
+        <div className="logo-container">
+          <img src={logo} alt="NBA Zone Logo" className="logo" />
           <h1>NBA Zone Website</h1>
-          {/* Add an image tag for your logo here if you have one */}
         </div>
         <nav className="navigation">
           <button className="header-button">Home</button>
