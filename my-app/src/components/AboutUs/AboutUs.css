@@ -1,3 +1,4 @@
+/* AboutUs.css */
 .about-us {
   background-color: #2c2f33; /* Dark background */
   padding: 40px;
@@ -16,21 +17,30 @@
 
 .feature-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 20px;
+  flex-direction: column; /* Stack children vertically */
+  gap: 20px; /* Space between items */
 }
 
 .feature-card {
   background: #4a4d50; /* Slightly lighter card backgrounds */
   border-radius: 8px;
   padding: 20px;
-  width: 250px; /* Adjust as necessary */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: left; /* Align text to the left within the card */
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center items vertically */
+  gap: 20px; /* Space between image and text */
+}
+
+.feature-card img {
+  width: auto; /* Keep image size as is */
+  max-width: 120px; /* Adjust max-width as necessary */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .feature-card h3 {
-  color: #2643a5; /* Color for card titles */
+  color: #ffffff; /* Color for card titles */
+  margin-bottom: 5px; /* Space below the h3 */
 }
 
 .feature-card p {
