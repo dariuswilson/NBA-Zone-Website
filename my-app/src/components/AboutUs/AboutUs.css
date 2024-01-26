@@ -1,37 +1,35 @@
 .about-us {
+  background-color: #2c2f33; /* Dark background */
+  padding: 40px;
   text-align: center;
-  color: #fff;
-  background-color: #333;
-  padding: 20px;
 }
 
 .about-us h2 {
-  color: #ff9800;
+  color: #2643a5;
 }
 
 .about-us p {
   margin-bottom: 20px;
+  color: #fff;
 }
 
 .feature-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; /* Adjust as necessary for your design */
-  gap: 20px; /* Space between cards */
+  justify-content: space-around;
+  gap: 20px;
 }
 
 .feature-card {
-  background: #444; /* Slightly different background for the cards */
-  border-radius: 10px; /* Rounded corners for cards */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  background: #4a4d50; /* Slightly lighter card backgrounds */
+  border-radius: 8px;
   padding: 20px;
-  min-width: 250px; /* Minimum width for each card */
-  max-width: 300px; /* Maximum width for each card */
-  margin: 10px;
+  width: 250px; /* Adjust as necessary */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .feature-card h3 {
-  color: #ff9800; /* Color for card titles */
+  color: #2643a5; /* Color for card titles */
 }
 
 .feature-card p {

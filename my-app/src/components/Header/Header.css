@@ -1,10 +1,10 @@
 .header {
-  background-color: #1a1a1a; /* Dark background color */
-  color: white;
-  padding: 10px 20px;
+  background-color: #23272a; /* Discord dark grey */
+  padding: 1rem; /* 16px */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Adds depth under the header */
 }
 
 .header-content {
@@ -22,14 +22,15 @@
 }
 
 .logo {
-  max-width: 100px; /* Adjust size as needed */
+  max-width: 50px; /* Adjust size as needed */
   border-radius: 50%; /* Makes the image rounded */
 }
 
 .logo-container h1 {
+  color: #ffffff; /* White color for title */
+  margin-left: 15px; /* Adjust spacing */
   font-size: 2.5em;
-  color: #ff9800; /* Logo text color */
-  margin-left: 20px; /* Spacing between logo and text */
+  color: #2643a5; /* Logo text color */
 }
 
 .navigation {
@@ -38,8 +39,8 @@
 }
 
 .header-button {
-  background-color: #ff9800; /* Button background color */
-  color: #1a1a1a; /* Button text color */
+  background-color: #7289da; /* Discord's brand blue */
+  color: white;
   border: none;
   border-radius: 20px;
   padding: 10px 20px;
@@ -49,7 +50,7 @@
 }
 
 .header-button:hover {
-  background-color: #e68a00; /* Darker shade for hover */
+  background-color: #003cff; /* Darker shade for hover */
   color: white;
 }
 
