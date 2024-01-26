@@ -1,0 +1,58 @@
+.header {
+  background-color: #1a1a1a; /* Dark background color */
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content {
+  width: 100%;
+  max-width: 1200px; /* Max width for the content inside header */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  font-size: 2.5em;
+  color: #ff9800; /* Logo text color */
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-button {
+  background-color: #ff9800; /* Button background color */
+  color: #1a1a1a; /* Button text color */
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.header-button:hover {
+  background-color: #e68a00; /* Darker shade for hover */
+  color: white;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+  }
+
+  .navigation {
+    margin-top: 10px;
+  }
+
+  .header-button {
+    margin: 5px; /* Smaller margin for smaller screens */
+  }
+}

@@ -1,0 +1,27 @@
+.simple-description {
+  text-align: center;
+  background-color: #4a4d50; /* A dark background color similar to the screenshot */
+  color: white; /* White text color for contrast */
+  padding: 50px 20px; /* Ample padding for aesthetic spacing */
+}
+
+.simple-description .logo {
+  max-width: 100px; /* Adjust size as needed */
+  margin-bottom: 20px; /* Spacing between logo and text */
+  border-radius: 50%; /* This makes the image rounded */
+  display: block; /* Aligns the image properly as a block */
+  margin-left: auto; /* These two margin settings center the image horizontally */
+  margin-right: auto;
+}
+
+.simple-description h1 {
+  margin: 0;
+  margin-bottom: 20px; /* Space below the header */
+  font-size: 2.5em; /* Large font size for the header */
+  color: #ff9800; /* Header color to match the screenshot's theme */
+}
+
+.simple-description p {
+  margin: 0;
+  font-size: 1.2em; /* Slightly larger font size for the paragraph */
+}
