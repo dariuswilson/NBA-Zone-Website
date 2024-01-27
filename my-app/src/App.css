@@ -12,3 +12,9 @@
   width: 300px; /* Or however wide you want your sidebar to be */
   /* Optional: Add a box-shadow or border to distinguish the sidebar */
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  /* This ensures there's no extra space around the edges of the page */
+}

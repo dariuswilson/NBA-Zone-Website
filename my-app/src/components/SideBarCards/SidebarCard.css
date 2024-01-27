@@ -1,11 +1,25 @@
 /* SidebarCard.css */
 .sidebar-card {
   background-color: #2c2f33; /* Dark background for card */
-  padding: 15px;
+  padding: 30px;
   margin-bottom: 15px; /* Spacing between cards */
   border-radius: 8px; /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
   color: white; /* Text color */
 }
 
-/* You can add more styling for the title, content, or other elements here */
+/* SidebarCard.css */
+.sidebar-card .social-links a {
+  margin-right: 40px; /* Spacing between icons */
+}
+
+.sidebar-card .social-links img {
+  width: 24px; /* Adjust size as needed */
+  height: 24px;
+}
+
+.sidebar-card h4 {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #ffffff;
+}

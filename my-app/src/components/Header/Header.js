@@ -1,6 +1,6 @@
 import React from "react";
-import "../../App.css"; // Assuming this contains global styles
-import "./Header.css"; // This will contain your new header styles
+import "../../App.css";
+import "./Header.css";
 import logo from "./nbazone.png";
 
 function Header() {

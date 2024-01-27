@@ -9,21 +9,20 @@ function ServerDescription() {
     const interval = setInterval(() => {
       setFadeOut(true);
 
-      // Wait for fadeOut animation to finish before fading in the next card
       setTimeout(() => {
         setActiveCard((prevActiveCard) =>
           prevActiveCard === "memberCount" ? "messageToday" : "memberCount"
         );
         setFadeOut(false);
-      }, 1000); // This timeout should match the duration of your fadeOut animation
-    }, 5000); // Adjust this interval as needed
+      }, 1000); //fadeOut timeout
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="server-description">
-      <h2>Just your typical NBA Discord Server</h2>
+      <h2>Not your typical NBA Discord Server</h2>
       <div className="stats-container">
         {activeCard === "memberCount" && (
           <div className={`stat-card ${!fadeOut ? "fade-in" : "fade-out"}`}>

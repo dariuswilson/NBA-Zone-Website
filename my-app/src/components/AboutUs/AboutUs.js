@@ -1,6 +1,6 @@
 // AboutUs.js
 import React from "react";
-import "./AboutUs.css"; // Make sure this path is correct
+import "./AboutUs.css";
 import lbj from "./lbj.png";
 import jt from "./jt.png";
 import trae from "./trae.png";
@@ -12,8 +12,8 @@ function AboutUs() {
     <div className="about-us">
       <h2>Join the NBA Zone Discord Server!</h2>
       <p>
-        Every day, users discuss over thousands of NBA topics on our server. Why
-        don't you join the conversation?
+        Every day, users discuss thousands of NBA-related topics on our server.
+        Ready to join the conversation?
       </p>
       <div className="feature-container">
         <div className="feature-card">
@@ -27,7 +27,9 @@ function AboutUs() {
           <img src={westbrook} alt="Game Nights" />
           <div>
             <h3>Game Nights</h3>
-            <p>Join game night events and watch parties during NBA season.</p>
+            <p>
+              Join game night events and watch parties during the NBA season
+            </p>
           </div>
         </div>
         <div className="feature-card">
@@ -41,9 +43,7 @@ function AboutUs() {
           <img src={trae} alt="Inclusive Community" />
           <div>
             <h3>Inclusive Community</h3>
-            <p>
-              A welcoming place for fans of all teams and levels of knowledge.
-            </p>
+            <p>A welcoming place for fans of all teams and knowledge-levels.</p>
           </div>
         </div>
         <div className="feature-card">
