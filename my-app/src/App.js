@@ -1,12 +1,5 @@
 import React from "react";
 import Header from "./components/Header/Header";
-import ActiveCard from "./components/ActiveCard/ActiveCard";
-import ServerDescription from "./components/ServerDescription/ServerDescription";
-import SidebarCard from "./components/SideBarCards/SidebarCard";
-import Footer from "./components/Footer/Footer";
-import GameNights from "./components/GameNights/GameNights";
-import AccessNBAStreams from "./components/AccessNBAStreams/AccessNBAStreams";
-
 import {
   faTiktok,
   faInstagram,
@@ -14,6 +7,14 @@ import {
   faDiscord,
 } from "@fortawesome/free-brands-svg-icons";
 import "./App.css";
+
+import ActiveCard from "./components/ActiveCard/ActiveCard";
+import ServerDescription from "./components/ServerDescription/ServerDescription";
+import SidebarCard from "./components/SideBarCards/SidebarCard";
+import Footer from "./components/Footer/Footer";
+import GameNights from "./components/GameNights/GameNights";
+import AccessNBAStreams from "./components/AccessNBAStreams/AccessNBAStreams";
+import FavoritePlayer from "./components/FavoritePlayer/FavoritePlayer";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <AccessNBAStreams />
           <ActiveCard />
           <GameNights />
+          <FavoritePlayer />
         </main>
         <aside className="sidebar">
           <SidebarCard
