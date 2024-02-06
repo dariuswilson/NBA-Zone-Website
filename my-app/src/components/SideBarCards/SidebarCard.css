@@ -28,3 +28,45 @@
   padding-bottom: 5px;
   border-bottom: 2px solid #ffffff;
 }
+
+/* Responsive adjustments for sidebar card */
+@media (max-width: 768px) {
+  .sidebar-card {
+    position: static; /* Let the card flow within the document */
+    margin-top: -20px; /* Adjust the top margin to move it closer or further from the content above */
+    margin-right: 0; /* Reset right margin */
+    margin-bottom: 30px; /* Add some margin to the bottom */
+    box-shadow: none; /* Optionally remove the shadow for a flatter design on smaller screens */
+    border: none; /* Optionally remove border */
+    padding: 15px; /* Adjust padding for smaller screens */
+    border-radius: 0; /* Optionally remove border radius for a full-width card */
+  }
+
+  .sidebar-card .social-links a {
+    margin-right: 15px; /* Adjust spacing between icons */
+  }
+
+  .sidebar-card .social-links img {
+    width: 20px; /* Adjust icon size for smaller screens */
+    height: 20px;
+  }
+
+  .sidebar-card h4 {
+    font-size: 16px; /* Adjust font size for headings */
+  }
+}
+
+/* Additional media query for very small screens, if necessary */
+@media (max-width: 480px) {
+  .sidebar-card {
+    padding: 10px; /* Further reduce padding */
+  }
+
+  .sidebar-card h4 {
+    font-size: 14px; /* Further reduce heading font size */
+  }
+
+  .sidebar-card .social-links a {
+    margin-right: 10px; /* Reduce spacing between icons even more */
+  }
+}

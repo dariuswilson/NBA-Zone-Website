@@ -96,4 +96,55 @@
   overflow: hidden; /* Prevents text from overflowing */
 }
 
-/* Rest of your styles... */
+/* MOBILE DEVICE */
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 20px; /* Reduced padding */
+    min-height: 300px; /* Adjusted minimum height */
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .logo-container {
+    margin-left: 0; /* Align logo container in the center */
+    margin-bottom: 20px; /* Space between logo and navigation */
+  }
+
+  .navigation {
+    position: static; /* Remove absolute positioning */
+    flex-direction: column; /* Stack navigation items vertically */
+    gap: 10px; /* Reduce gap size */
+    align-items: center; /* Align navigation items in the center */
+  }
+
+  .nav-button {
+    font-size: 16px; /* Reduce font size */
+  }
+
+  .join-discord {
+    position: static; /* Remove absolute positioning */
+    margin-top: 20px; /* Add margin at the top */
+    width: 100%; /* Full width button */
+    justify-content: center; /* Center icon and text inside the button */
+  }
+
+  .join-discord img {
+    width: 20px; /* Adjust logo size */
+  }
+
+  .header-title {
+    font-size: 96px; /* Adjust title size for mobile */
+    top: 30%; /* Adjust top position to prevent overlap */
+    -webkit-text-stroke: 0.5px #ffffff; /* Adjust stroke thickness */
+    transform: translate(
+      -50%,
+      -30%
+    ); /* Adjust translation to match new top value */
+  }
+}
+
+/* Additional media query for even smaller screens if necessary */
+@media (max-width: 480px) {
+  .header-title {
+    font-size: 72px; /* Further reduce title size for small screens */
+  }
+}

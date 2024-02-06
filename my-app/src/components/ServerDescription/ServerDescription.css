@@ -83,3 +83,61 @@ body {
   padding: 0;
   overflow-x: hidden; /* Hide horizontal scroll */
 }
+
+/* Responsive adjustments for server description */
+@media (max-width: 768px) {
+  .server-description {
+    flex-direction: column; /* Stack elements vertically */
+    height: auto; /* Adjust height to content */
+    padding: 30px 5%; /* Adjust padding */
+  }
+
+  .server-description-text-content {
+    max-width: 100%; /* Full width */
+    margin-right: 0; /* Reset margin */
+    text-align: center; /* Center text */
+  }
+
+  .server-description-text-content h2 {
+    font-size: 36px; /* Adjust font size for smaller screens */
+    margin-bottom: 15px; /* Adjust spacing */
+  }
+
+  .server-description-text-content p {
+    font-size: 16px; /* Adjust paragraph font size */
+  }
+
+  .server-description-join-discord-button {
+    justify-content: center; /* Center button contents */
+    margin-top: 15px; /* Adjust margin */
+    margin-bottom: 15px; /* Add margin to the bottom */
+  }
+
+  .server-description-image-content {
+    max-width: 100%; /* Full width */
+    margin-bottom: 15px; /* Space between image and text */
+    transform: none; /* Remove rotation for mobile */
+  }
+
+  .server-description-image-content img {
+    height: auto; /* Adjust height based on width */
+    max-width: 80%; /* Reduce image size */
+    margin: auto; /* Center image */
+  }
+
+  .server-description-image-content blockquote {
+    margin-top: 0; /* Remove margin */
+    padding: 0 10px; /* Add padding */
+  }
+}
+
+/* Additional media query for even smaller screens if necessary */
+@media (max-width: 480px) {
+  .server-description-text-content h2 {
+    font-size: 28px; /* Further reduce title size for small screens */
+  }
+
+  .server-description-image-content img {
+    max-width: 90%; /* Allow image to take more width if needed */
+  }
+}
