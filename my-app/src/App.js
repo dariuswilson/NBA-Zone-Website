@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./components/Header/Header";
-import AboutUs from "./components/AboutUs/AboutUs";
+import ActiveCard from "./components/ActiveCard/ActiveCard";
 import ServerDescription from "./components/ServerDescription/ServerDescription";
 import SidebarCard from "./components/SideBarCards/SidebarCard";
 import Footer from "./components/Footer/Footer";
@@ -22,7 +22,7 @@ function App() {
         <main className="main-content">
           <ServerDescription />
           <AccessNBAStreams />
-          <AboutUs />
+          <ActiveCard />
         </main>
         <aside className="sidebar">
           <SidebarCard
