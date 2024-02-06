@@ -6,7 +6,6 @@ function PictureOfNBALegends() {
   return (
     <div className="picture-of-nba-legends">
       <img src={nbaLegendsImage} alt="NBA Legends" />
-      {/* Additional content can go here */}
     </div>
   );
 }

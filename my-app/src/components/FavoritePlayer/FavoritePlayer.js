@@ -17,7 +17,7 @@ function FavoritePlayer() {
           all about it... there are so many like you on the inside!
         </p>
         <a
-          href="https://discord.gg/nbazone"
+          href="https://discord.gg/nbachat"
           className="favorite-player-join-discord-button"
         >
           <img

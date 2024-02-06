@@ -17,7 +17,7 @@ function ActiveCard() {
           every hour. And to top it all, it’s free to join.
         </p>
         <a
-          href="https://discord.gg/nbazone"
+          href="https://discord.gg/nbachat"
           className="active-card-join-discord-button"
         >
           <img

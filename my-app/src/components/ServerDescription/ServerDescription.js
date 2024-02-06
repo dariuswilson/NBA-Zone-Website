@@ -18,7 +18,7 @@ function ServerDescription() {
           place to hangout.
         </p>
         <a
-          href="https://discord.gg/nbazone"
+          href="https://discord.gg/nbachat"
           className="server-description-join-discord-button"
         >
           <img

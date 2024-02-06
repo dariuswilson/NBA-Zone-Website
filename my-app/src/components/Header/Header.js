@@ -18,7 +18,7 @@ function Header() {
         <button className="nav-button">NBA Merch</button>
       </nav>
       <a
-        href="https://discord.gg/nbazone"
+        href="https://discord.gg/nbachat"
         className="join-discord"
         target="_blank"
         rel="noopener noreferrer"

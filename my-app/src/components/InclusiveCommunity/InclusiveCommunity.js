@@ -18,7 +18,7 @@ function InclusiveCommunity() {
           rivalries.
         </p>
         <a
-          href="https://discord.gg/nbazone"
+          href="https://discord.gg/nbachat"
           className="inclusive-community-join-discord-button"
         >
           <img
