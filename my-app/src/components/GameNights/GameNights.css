@@ -31,6 +31,7 @@
   height: 368px;
   transform: rotate(-5.305deg);
   z-index: 2; /* Ensure this image is on top */
+  border: 2px solid white;
 }
 
 .game-nights-image-content img.second-image {
@@ -39,6 +40,7 @@
   height: 368px;
   transform: rotate(-14.019deg);
   z-index: 1; /* Ensure this image is below the first image */
+  border: 2px solid white;
 }
 
 .game-nights-image-content img {

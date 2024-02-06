@@ -74,6 +74,7 @@
   height: 230px;
   width: 415px;
   display: block;
+  border: 2px solid white;
 }
 
 .active-card-image-content blockquote {

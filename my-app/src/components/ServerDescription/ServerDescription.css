@@ -68,6 +68,7 @@
   border-radius: 4px; /* Rounded corners for the image */
   height: 230px;
   width: 415px;
+  border: 2px solid white;
 }
 
 .server-description-image-content blockquote {

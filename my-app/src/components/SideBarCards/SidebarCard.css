@@ -10,6 +10,7 @@
   top: 450px; /* Adjust this value to move the sidebar card up by 50px; change as needed */
   right: 40px; /* Position from the right; adjust as needed */
   z-index: 10; /* Ensure the sidebar card is above the header */
+  border: 2px solid white;
 }
 
 /* SidebarCard.css */
