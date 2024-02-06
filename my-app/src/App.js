@@ -16,6 +16,8 @@ import GameNights from "./components/GameNights/GameNights";
 import AccessNBAStreams from "./components/AccessNBAStreams/AccessNBAStreams";
 import FavoritePlayer from "./components/FavoritePlayer/FavoritePlayer";
 import ChooseTeam from "./components/ChooseTeam/ChooseTeam";
+import InclusiveCommunity from "./components/InclusiveCommunity/InclusiveCommunity";
+import PictureOfNBALegends from "./components/PictureOfNBALegends/PictureOfNBALegends";
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
           <GameNights />
           <FavoritePlayer />
           <ChooseTeam />
+          <InclusiveCommunity />
+          <PictureOfNBALegends />
         </main>
         <aside className="sidebar">
           <SidebarCard
@@ -58,7 +62,7 @@ function App() {
           />
         </aside>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

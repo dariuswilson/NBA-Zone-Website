@@ -1,0 +1,13 @@
+.picture-of-nba-legends {
+  width: 100%; /* Full width of the screen */
+  height: 529px; /* Fixed height */
+  position: relative; /* If you need to position elements inside the div absolutely */
+  overflow: hidden; /* This will hide any part of the image that overflows the 625px height */
+}
+
+.picture-of-nba-legends img {
+  width: 100%; /* Stretch the image to cover the full width */
+  min-height: 529px; /* Ensure the image covers the height */
+  object-fit: cover; /* Cover the div without stretching the image */
+  display: block; /* Remove any space below the image */
+}
