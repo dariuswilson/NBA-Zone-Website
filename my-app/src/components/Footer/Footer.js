@@ -23,7 +23,7 @@ function Footer() {
           <span>NBA SCORES</span>
         </a>
       </nav>
-      <a href="https://discord.gg/nbazone" className="join-discord">
+      <a href="https://discord.gg/nbachat" className="join-discord">
         <img src={discordIcon} alt="Join Discord" />
         <span>JOIN DISCORD</span>
       </a>
