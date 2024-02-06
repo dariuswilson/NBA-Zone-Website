@@ -1,85 +1,98 @@
-.header {
-  background-color: #23272a; /* Discord dark grey */
-  width: 100%; /* This ensures the header extends to full width */
-  margin: 0; /* Resets any default margin */
-  padding: 0px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Adds depth under the header */
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap");
 
-.header-content {
+/* Header.css */
+.header {
+  position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 100%;
-  max-width: 1200px; /* Max width for the content inside header */
-  margin: 0 auto;
+  background: url("basketball-legends.png") no-repeat center center;
+  background-size: cover;
+  padding: 20px 40px;
+  min-height: 625px; /* Adjust the height as needed */
 }
 
 .logo-container {
-  display: flex; /* Aligns logo and title side by side */
-  align-items: center; /* Aligns items vertically */
+  align-self: start;
+  margin-left: 20px; /* Space from the left edge */
+  border: 3px solid white;
+  padding-left: 3px;
+  padding-top: 3px;
+  padding-right: 3px;
+  background: white;
+  border-radius: 8px; /* Slightly rounded corners */
+  overflow: hidden; /* Ensures the image does not break out of border-radius */
 }
 
 .logo {
-  max-width: 50px; /* Adjust size as needed */
-  border-radius: 50%; /* Makes the image rounded */
-}
-
-.logo-container h1 {
-  color: #ffffff; /* White color for title */
-  margin-left: 15px; /* Adjust spacing */
-  font-size: 2.5em;
-  color: #2643a5; /* Logo text color */
+  width: 78px;
+  height: 78px;
 }
 
 .navigation {
   display: flex;
-  align-items: center;
+  gap: 20px;
+  position: absolute;
+
+  right: 250px; /* Adjust this value to move closer to the 'JOIN DISCORD' button */
+  top: 32px; /* Position from the top */
 }
 
-.header-button {
-  background-color: #7289da; /* Discord's brand blue */
-  color: white;
+.nav-button {
+  background: none;
   border: none;
-  border-radius: 20px;
-  padding: 10px 20px;
-  margin-left: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.header-button:hover {
-  background-color: #003cff; /* Darker shade for hover */
   color: white;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 800; /* Extra bold weight */
+  font-size: 19px; /* Size of the font */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-  .header-content {
-    flex-direction: column;
-  }
-
-  .navigation {
-    margin-top: 10px;
-  }
-
-  .header-button {
-    margin: 5px; /* Smaller margin for smaller screens */
-  }
+.nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  /* This ensures the page takes up full viewport height */
-  height: 100%;
-  /* This ensures the page takes up full viewport width */
-  width: 100%;
-  /* This removes any default browser styling that might add unwanted space */
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+.join-discord {
+  display: flex;
+  align-items: center;
+  background: #2c2f33; /* Discord bluish color */
+  padding: 10px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  position: absolute;
+  right: 40px; /* Space from the right edge */
+  top: 32px; /* Position from the top */
 }
+
+.join-discord img {
+  width: 24px; /* Size of the Discord logo */
+}
+
+.join-discord span {
+  color: white;
+  font-weight: bold;
+  margin-left: 8px; /* Space between the icon and text */
+}
+
+.header-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 192px; /* Large font size for the title */
+  font-weight: 800; /* Extra bold weight - assuming you have this weight downloaded */
+  pointer-events: none; /* Allows clicks to pass through */
+  font-family: "Poppins", sans-serif; /* The font-family you want to use */
+  color: transparent; /* Makes the inside of the letters transparent */
+  -webkit-text-stroke: 1px #ffffff; /* Stroke effect for webkit browsers */
+  white-space: nowrap; /* Prevents the text from wrapping */
+  max-width: 100%; /* Ensures it doesn't exceed the width of the parent container */
+  overflow: hidden; /* Prevents text from overflowing */
+}
+
+/* Rest of your styles... */
