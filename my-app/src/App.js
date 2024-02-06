@@ -2,9 +2,9 @@ import React from "react";
 import Header from "./components/Header/Header";
 import AboutUs from "./components/AboutUs/AboutUs";
 import ServerDescription from "./components/ServerDescription/ServerDescription";
-import SimpleDescription from "./components/SimpleDescription/SimpleDescription";
 import SidebarCard from "./components/SideBarCards/SidebarCard";
 import Footer from "./components/Footer/Footer";
+import AccessNBAStreams from "./components/AccessNBAStreams/AccessNBAStreams";
 
 import {
   faTiktok,
@@ -21,7 +21,7 @@ function App() {
       <div className="content-layout">
         <main className="main-content">
           <ServerDescription />
-          <SimpleDescription />
+          <AccessNBAStreams />
           <AboutUs />
         </main>
         <aside className="sidebar">
