@@ -4,6 +4,7 @@ import ActiveCard from "./components/ActiveCard/ActiveCard";
 import ServerDescription from "./components/ServerDescription/ServerDescription";
 import SidebarCard from "./components/SideBarCards/SidebarCard";
 import Footer from "./components/Footer/Footer";
+import GameNights from "./components/GameNights/GameNights";
 import AccessNBAStreams from "./components/AccessNBAStreams/AccessNBAStreams";
 
 import {
@@ -23,6 +24,7 @@ function App() {
           <ServerDescription />
           <AccessNBAStreams />
           <ActiveCard />
+          <GameNights />
         </main>
         <aside className="sidebar">
           <SidebarCard
@@ -52,7 +54,7 @@ function App() {
           />
         </aside>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
