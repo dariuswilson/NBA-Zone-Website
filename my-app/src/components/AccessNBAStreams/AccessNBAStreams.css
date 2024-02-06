@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap");
+
+/* AccessNBAStreams.css */
+.access-nba-streams {
+  display: flex;
+  align-items: flex-start;
+  background-color: #111; /* Dark background color for contrast */
+  color: white;
+  padding: 50px 5%; /* Responsive padding */
+  box-sizing: border-box;
+  width: 100%;
+  height: 625px;
+}
+
+.access-nba-streams-image-content {
+  width: calc(35% - 5%);
+  margin-right: 5%; /* Space between the image and the text */
+}
+
+.access-nba-streams-image-content img {
+  width: 100%; /* Responsive image width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 4px; /* Rounded corners for the image */
+}
+
+.access-nba-streams-text-content {
+  flex: 1; /* Take the remaining space */
+  padding-left: 5%;
+}
+
+.access-nba-streams-text-content h2 {
+  font-size: 48px; /* Large font size for the title */
+  margin-top: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.access-nba-streams-text-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: "Poppins", sans-serif;
+}
+
+.access-nba-streams-blockquote {
+  font-family: "Poppins", sans-serif;
+  font-style: italic; /* Italicize the quote */
+  margin-top: 10px; /* Space above the quote */
+}
+
+.access-nba-streams-get-access-button {
+  display: block;
+  width: fit-content;
+  margin-top: 20px;
+  margin-bottom: 0;
+  align-items: center;
+  background-color: #f38806; /* Discord brand color */
+  color: black;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Nunito", sans-serif;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border: 2px solid white; /* White border around the button */
+}
+
+.access-nba-streams-get-access-button img {
+  width: 24px; /* Size of the icon */
+  margin-right: 8px; /* Space between the icon and text */
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+  .access-nba-streams {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .access-nba-streams-image-content,
+  .access-nba-streams-text-content {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .access-nba-streams-image-content img {
+    margin-bottom: 20px; /* Space between the image and the text on mobile */
+    transform: none; /* Remove tilt for mobile */
+  }
+}
+
+/* Reset margins and paddings */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}

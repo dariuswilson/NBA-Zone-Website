@@ -16,25 +16,25 @@
   height: 625px;
 }
 
-.text-content {
+.server-description-text-content {
   max-width: 60%; /* Adjust text content max width */
   margin-right: 2%; /* Space between text and image */
 }
 
-.text-content h2 {
+.server-description-text-content h2 {
   font-size: 61px; /* Large font size for the member count */
   font-family: "Poppins", sans-serif;
   font-weight: 800;
   margin-bottom: 20px; /* Space below the heading */
 }
 
-.text-content p {
+.server-description-text-content p {
   font-family: "Poppins", sans-serif;
   font-size: 18px; /* Paragraph font size */
   line-height: 1.6; /* Line height for better readability */
 }
 
-.join-discord-button {
+.server-description-join-discord-button {
   display: inline-flex; /* Use flexbox for aligning image and text */
   align-items: center; /* Center items vertically */
   background-color: #f38806; /* Discord's brand color */
@@ -50,19 +50,19 @@
   font-style: italic;
 }
 
-.discord-logo {
+.server-description-discord-logo {
   width: 20px; /* Adjust width as needed */
   height: auto; /* Maintain aspect ratio */
   margin-right: 8px; /* Space between the logo and text */
 }
 
-.image-content {
+.server-description-image-content {
   max-width: 35%; /* Adjust image content max width */
-  transform: rotate(3deg); /* Tilt the image */
+  transform: rotate(3deg);
   overflow: hidden; /* Ensure the overflow from rotation is hidden */
 }
 
-.image-content img {
+.server-description-image-content img {
   max-width: 100%; /* Responsive image width */
   height: auto; /* Maintain aspect ratio */
   border-radius: 4px; /* Rounded corners for the image */
@@ -70,7 +70,7 @@
   width: 415px;
 }
 
-.image-content blockquote {
+.server-description-image-content blockquote {
   font-family: "Poppins", sans-serif;
   font-style: italic; /* Italicize the quote */
   margin-top: 10px; /* Space above the quote */
