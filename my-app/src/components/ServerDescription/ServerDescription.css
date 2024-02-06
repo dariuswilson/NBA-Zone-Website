@@ -12,7 +12,7 @@
   padding: 50px 5%; /* Adjust padding as needed */
   box-sizing: border-box; /* Include padding in the width */
   width: 100%; /* Full width */
-  margin-top: -50px; /* Adjust if needed to overlay on the header */
+  /* margin-top: -50px; Adjust if needed to overlay on the header */
   height: 625px;
 }
 
