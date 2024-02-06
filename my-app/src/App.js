@@ -15,6 +15,7 @@ import Footer from "./components/Footer/Footer";
 import GameNights from "./components/GameNights/GameNights";
 import AccessNBAStreams from "./components/AccessNBAStreams/AccessNBAStreams";
 import FavoritePlayer from "./components/FavoritePlayer/FavoritePlayer";
+import ChooseTeam from "./components/ChooseTeam/ChooseTeam";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <ActiveCard />
           <GameNights />
           <FavoritePlayer />
+          <ChooseTeam />
         </main>
         <aside className="sidebar">
           <SidebarCard
