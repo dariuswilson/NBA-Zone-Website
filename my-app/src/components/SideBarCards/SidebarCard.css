@@ -6,6 +6,10 @@
   border-radius: 8px; /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
   color: white; /* Text color */
+  position: absolute; /* Position the sidebar card absolutely within its parent */
+  top: 450px; /* Adjust this value to move the sidebar card up by 50px; change as needed */
+  right: 40px; /* Position from the right; adjust as needed */
+  z-index: 10; /* Ensure the sidebar card is above the header */
 }
 
 /* SidebarCard.css */
