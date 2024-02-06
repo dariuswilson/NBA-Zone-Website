@@ -26,6 +26,8 @@ function GameNights() {
         </p>
         <a
           href="https://discord.gg/nbachat"
+          target="_blank"
+          rel="noreferrer"
           className="game-nights-get-access-button"
         >
           <img

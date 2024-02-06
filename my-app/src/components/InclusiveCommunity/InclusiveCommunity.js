@@ -19,6 +19,8 @@ function InclusiveCommunity() {
         </p>
         <a
           href="https://discord.gg/nbachat"
+          target="_blank"
+          rel="noreferrer"
           className="inclusive-community-join-discord-button"
         >
           <img

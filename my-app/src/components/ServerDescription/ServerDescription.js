@@ -19,6 +19,8 @@ function ServerDescription() {
         </p>
         <a
           href="https://discord.gg/nbachat"
+          target="_blank"
+          rel="noreferrer"
           className="server-description-join-discord-button"
         >
           <img

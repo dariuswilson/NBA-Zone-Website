@@ -18,6 +18,8 @@ function FavoritePlayer() {
         </p>
         <a
           href="https://discord.gg/nbachat"
+          target="_blank"
+          rel="noreferrer"
           className="favorite-player-join-discord-button"
         >
           <img

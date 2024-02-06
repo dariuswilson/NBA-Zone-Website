@@ -24,6 +24,8 @@ function ChooseTeam() {
         </p>
         <a
           href="https://discord.gg/nbachat"
+          target="_blank"
+          rel="noreferrer"
           className="choose-team-get-access-button"
         >
           <img

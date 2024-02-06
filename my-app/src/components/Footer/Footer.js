@@ -10,20 +10,17 @@ function Footer() {
         <img src={logo} alt="NBA Zone" className="logo" />
       </div>
       <nav className="menu">
-        <a href="/nba-stream">
-          <span>NBA STREAM</span>
-        </a>
-        <a href="/">
-          <span>HOME</span>
-        </a>
-        <a href="/game-nights">
-          <span>GAME NIGHTS</span>
-        </a>
-        <a href="/nba-scores">
-          <span>NBA SCORES</span>
-        </a>
+        <button className="nav-button">HOME</button>
+        <button className="nav-button">GAME NIGHTS</button>
+        <button className="nav-button">NBA SCORES</button>
+        <button className="nav-button">NBA STREAM</button>
       </nav>
-      <a href="https://discord.gg/nbachat" className="join-discord">
+      <a
+        href="https://discord.gg/nbachat"
+        target="_blank"
+        rel="noreferrer"
+        className="join-discord"
+      >
         <img src={discordIcon} alt="Join Discord" />
         <span>JOIN DISCORD</span>
       </a>

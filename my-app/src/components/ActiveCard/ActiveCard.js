@@ -18,6 +18,8 @@ function ActiveCard() {
         </p>
         <a
           href="https://discord.gg/nbachat"
+          target="_blank"
+          rel="noreferrer"
           className="active-card-join-discord-button"
         >
           <img
