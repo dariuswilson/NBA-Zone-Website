@@ -90,3 +90,54 @@ body {
   padding: 0;
   overflow-x: hidden; /* Hide horizontal scroll */
 }
+
+@media (max-width: 768px) {
+  .inclusive-community {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    height: auto;
+  }
+
+  .inclusive-community-text-content,
+  .inclusive-community-image-content,
+  .inclusive-community-blockquote {
+    max-width: 100%;
+    margin: 0 auto; /* Center the content */
+  }
+
+  .inclusive-community-text-content h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  .inclusive-community-text-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .inclusive-community-join-discord-button {
+    order: 3; /* Discord button comes after the text */
+    width: auto;
+    margin: 20px auto; /* Center the button */
+  }
+
+  .inclusive-community-image-content {
+    order: 4; /* Image comes after the Discord button */
+    transform: none; /* Remove any rotation on mobile */
+    margin-top: 20px;
+  }
+
+  .inclusive-community-image-content img {
+    width: 80%; /* Adjust the image size */
+    margin-top: 0; /* Remove any additional top margin if set */
+  }
+
+  .inclusive-community-blockquote {
+    order: 5; /* Blockquote comes last */
+    transform: none; /* Remove any rotation */
+    margin-top: 20px;
+    font-size: 16px; /* Adjust the font size if needed */
+  }
+}

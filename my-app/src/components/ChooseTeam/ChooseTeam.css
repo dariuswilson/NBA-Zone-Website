@@ -85,28 +85,61 @@
   margin-right: 8px; /* Space between the icon and text */
 }
 
-/* Adjustments for responsiveness */
-@media (max-width: 768px) {
-  .choose-team {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .choose-team-image-content,
-  .choose-team-text-content {
-    max-width: 100%;
-    margin-right: 0;
-  }
-
-  .choose-team-image-content img {
-    margin-bottom: 20px; /* Space between the image and the text on mobile */
-    transform: none; /* Remove tilt for mobile */
-  }
-}
-
 /* Reset margins and paddings */
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* MOBILE ACCESSIBLE */
+@media (max-width: 768px) {
+  .choose-team {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    height: auto; /* Adjust the height based on the content */
+  }
+
+  .choose-team-text-content,
+  .choose-team-image-content,
+  .choose-team-blockquote {
+    max-width: 100%; /* Allow content to fill the width */
+    margin: 0; /* Reset margins */
+  }
+
+  .choose-team-text-content h2,
+  .choose-team-text-content p {
+    margin-bottom: 10px; /* Space below the text */
+  }
+
+  .choose-team-get-access-button {
+    order: 2; /* Position the button after the text */
+    width: 90%; /* Full width for button */
+    margin-top: 10px; /* Space above the button */
+    margin-bottom: 10px; /* Space below the button */
+  }
+
+  .choose-team-image-content {
+    order: 3; /* Position the image after the button */
+    margin-top: 10px; /* Space above the image */
+    width: 100%; /* Full width for image */
+  }
+
+  .choose-team-image-content img {
+    transform: none; /* Remove rotation for mobile */
+    width: 80%; /* Full width for image */
+    margin-bottom: 10px; /* Space below the image */
+  }
+
+  .choose-team-blockquote {
+    order: 4; /* Position the blockquote after the image */
+    transform: none; /* Remove rotation */
+    width: 90%; /* Adjust blockquote width */
+    margin-top: 0; /* Reset margin */
+    text-align: center;
+    position: relative;
+    bottom: auto; /* Reset bottom position */
+  }
 }

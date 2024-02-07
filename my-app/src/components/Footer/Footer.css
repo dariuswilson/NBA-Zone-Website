@@ -66,11 +66,6 @@
   color: white; /* Set the text color */
 }
 
-/* Add responsive adjustments as needed */
-@media (max-width: 768px) {
-  /* Your responsive styles here */
-}
-
 .footer .join-discord {
   display: flex;
   align-items: center;
@@ -83,4 +78,40 @@
   right: 40px; /* Space from the right edge */
   top: 32px; /* Position from the top */
   margin-right: 40px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: auto; /* Adjust the height based on the content */
+  }
+
+  .footer .menu {
+    flex-direction: column; /* Stack menu items vertically */
+    position: static; /* Remove absolute positioning */
+    transform: none; /* Remove vertical centering transform */
+    gap: 10px; /* Reduce space between menu items */
+  }
+
+  .footer .menu a {
+    font-size: 16px; /* Adjust font size for mobile */
+  }
+
+  .footer .footer-legal {
+    position: static; /* Remove absolute positioning */
+    bottom: auto; /* Remove bottom positioning */
+    margin-top: 20px; /* Add space above the legal text */
+  }
+
+  .footer .join-discord {
+    position: static; /* Remove absolute positioning */
+    right: auto; /* Remove right positioning */
+    top: auto; /* Remove top positioning */
+    margin: 20px auto; /* Add margin for vertical and horizontal centering */
+    width: 80%; /* Full width button */
+  }
 }

@@ -89,3 +89,61 @@ body {
   padding: 0;
   overflow-x: hidden; /* Hide horizontal scroll */
 }
+
+/* MOBILE ACCESSIBLE */
+@media (max-width: 768px) {
+  .favorite-player {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    min-height: auto;
+  }
+
+  .favorite-player-text-content,
+  .favorite-player-join-discord-button,
+  .favorite-player-image-content,
+  .favorite-player-image-content img,
+  .favorite-player-image-content blockquote {
+    max-width: 100%;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  .favorite-player-text-content h2 {
+    font-size: 36px; /* Adjust the font size for smaller screens */
+    margin-bottom: 10px;
+  }
+
+  .favorite-player-text-content p {
+    font-size: 16px; /* Adjust the font size for smaller screens */
+  }
+
+  .favorite-player-join-discord-button {
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+  }
+
+  .favorite-player-discord-logo {
+    /* Adjust discord logo size if needed */
+  }
+
+  .favorite-player-image-content {
+    transform: none;
+    order: 3; /* Image comes after the discord button */
+  }
+
+  .favorite-player-image-content img {
+    /* Adjust the size of the image as needed */
+    height: auto;
+    width: 80%; /* Make the image a bit smaller */
+    margin: 0 auto; /* Center the image */
+  }
+
+  .favorite-player-image-content blockquote {
+    order: 4; /* Blockquote comes after the image */
+    margin-top: 10px;
+    padding: 0 10px; /* Add some padding */
+  }
+}

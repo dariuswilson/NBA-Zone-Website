@@ -33,13 +33,15 @@
 @media (max-width: 768px) {
   .sidebar-card {
     position: static; /* Let the card flow within the document */
-    margin-top: -20px; /* Adjust the top margin to move it closer or further from the content above */
-    margin-right: 0; /* Reset right margin */
-    margin-bottom: 30px; /* Add some margin to the bottom */
+    /* margin-bottom: 30px; Add some margin to the bottom */
     box-shadow: none; /* Optionally remove the shadow for a flatter design on smaller screens */
     border: none; /* Optionally remove border */
     padding: 15px; /* Adjust padding for smaller screens */
     border-radius: 0; /* Optionally remove border radius for a full-width card */
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 210%;
   }
 
   .sidebar-card .social-links a {
