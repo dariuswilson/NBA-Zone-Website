@@ -111,28 +111,76 @@
   margin-right: 8px; /* Space between the icon and text */
 }
 
-/* Adjustments for responsiveness */
-@media (max-width: 768px) {
-  .game-nights {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .game-nights-image-content,
-  .game-nights-text-content {
-    max-width: 100%;
-    margin-right: 0;
-  }
-
-  .game-nights-image-content img {
-    margin-bottom: 20px; /* Space between the image and the text on mobile */
-    transform: none; /* Remove tilt for mobile */
-  }
-}
-
 /* Reset margins and paddings */
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Responsive adjustments for GameNights */
+@media (max-width: 768px) {
+  .game-nights {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center the content */
+    padding: 20px; /* Adjust padding for smaller screens */
+    height: auto; /* Let the height be determined by content */
+    text-align: center;
+  }
+
+  .game-nights-image-content {
+    width: 80%; /* Adjust width to control the size of images */
+    margin-top: 50px; /* Push content down to make space for the 'Join Discord' button */
+    position: relative;
+    display: block; /* Change to block to stack the images and blockquote */
+    text-align: center;
+  }
+
+  .game-nights-image-content img.first-image,
+  .game-nights-image-content img.second-image {
+    width: 60%; /* Make images smaller */
+    position: absolute; /* Change position to relative */
+    left: 50%; /* Center the image */
+    transform: translateX(
+      -50%
+    ); /* Adjust translate to ensure image is centered */
+    /* margin-bottom: -50px; Overlap images */
+  }
+
+  .game-nights-image-content img.first-image {
+    left: 50%; /* Start at 50% from the left */
+    transform: translateX(-50%) rotate(-5.305deg); /* Center then rotate */
+    /* Make sure the margin-bottom is negative half the image height to overlap */
+    margin-bottom: -184px;
+  }
+  .game-nights-image-content img.second-image {
+    z-index: 1; /* Ensure this image is below the first image */
+    transform: translateX(-50%) rotate(-14.019deg);
+  }
+
+  .game-nights-blockquote {
+    position: relative; /* Adjust to normal flow */
+    transform: rotate(-14.019deg);
+    margin-top: 20px; /* Add margin to push it below the image */
+    bottom: -95%; /* Remove bottom positioning */
+    left: 10%; /* Center the blockquote */
+    z-index: 3; /* Keep z-index or adjust as necessary */
+    width: 90%; /* Adjust width */
+    top: 90%;
+    text-align: center; /* Center the text */
+  }
+
+  .game-nights-text-content {
+    order: -1; /* Move text above the images */
+    padding: 0 15px; /* Adjust padding for text content */
+    margin-bottom: 20px; /* Space between text and images */
+  }
+
+  .game-nights-get-access-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Space above the button */
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside the button */
+  }
 }

@@ -74,28 +74,69 @@
   margin-right: 8px; /* Space between the icon and text */
 }
 
-/* Adjustments for responsiveness */
-@media (max-width: 768px) {
-  .access-nba-streams {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .access-nba-streams-image-content,
-  .access-nba-streams-text-content {
-    max-width: 100%;
-    margin-right: 0;
-  }
-
-  .access-nba-streams-image-content img {
-    margin-bottom: 20px; /* Space between the image and the text on mobile */
-    transform: none; /* Remove tilt for mobile */
-  }
-}
-
 /* Reset margins and paddings */
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Responsive adjustments for AccessNBAStreams */
+@media (max-width: 768px) {
+  .access-nba-streams {
+    flex-direction: column; /* Stack elements vertically */
+    height: auto; /* Adjust height to fit content */
+    padding: 25px 5%; /* Reduce padding */
+  }
+
+  .access-nba-streams-text-content {
+    order: 1; /* Text comes first */
+    padding-left: 0; /* Reset padding */
+    text-align: center; /* Center text for mobile */
+  }
+
+  .access-nba-streams-text-content h2 {
+    font-size: 36px; /* Reduce font size for the title */
+    margin-bottom: 15px; /* Adjust margin */
+  }
+
+  .access-nba-streams-text-content p {
+    font-size: 16px; /* Reduce paragraph font size */
+  }
+
+  .access-nba-streams-image-content {
+    order: 2; /* Image comes after text */
+    width: 100%; /* Full width images */
+    margin-right: 0; /* Reset margin */
+    margin-top: 20px; /* Space between text and image */
+  }
+
+  .access-nba-streams-image-content img {
+    margin-bottom: 10px; /* Space between image and blockquote */
+  }
+
+  .access-nba-streams-blockquote {
+    /* Adjust blockquote styling if needed */
+  }
+
+  .access-nba-streams-get-access-button {
+    width: auto; /* Full width button */
+    margin: 20px auto; /* Center button with margin */
+    padding: 10px 30px; /* Adjust padding */
+  }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+  .access-nba-streams-text-content h2 {
+    font-size: 30px; /* Even smaller font size for the title */
+  }
+
+  .access-nba-streams-text-content p {
+    font-size: 14px; /* Smaller paragraph font size */
+  }
+
+  .access-nba-streams-get-access-button {
+    padding: 8px 25px; /* Smaller padding */
+  }
 }

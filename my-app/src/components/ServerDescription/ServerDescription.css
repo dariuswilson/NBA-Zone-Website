@@ -87,47 +87,48 @@ body {
 /* Responsive adjustments for server description */
 @media (max-width: 768px) {
   .server-description {
-    flex-direction: column; /* Stack elements vertically */
-    height: auto; /* Adjust height to content */
-    padding: 30px 5%; /* Adjust padding */
+    flex-direction: column;
+    height: auto;
+    padding: 30px 5%;
   }
 
-  .server-description-text-content {
-    max-width: 100%; /* Full width */
-    margin-right: 0; /* Reset margin */
-    text-align: center; /* Center text */
+  .server-description-text-content,
+  .server-description-image-content,
+  .server-description-join-discord-button {
+    max-width: 100%;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 15px; /* Ensure spacing between elements */
   }
 
   .server-description-text-content h2 {
-    font-size: 36px; /* Adjust font size for smaller screens */
-    margin-bottom: 15px; /* Adjust spacing */
+    font-size: 36px;
+    margin-bottom: 15px;
   }
 
   .server-description-text-content p {
-    font-size: 16px; /* Adjust paragraph font size */
-  }
-
-  .server-description-join-discord-button {
-    justify-content: center; /* Center button contents */
-    margin-top: 15px; /* Adjust margin */
-    margin-bottom: 15px; /* Add margin to the bottom */
+    font-size: 16px;
   }
 
   .server-description-image-content {
-    max-width: 100%; /* Full width */
-    margin-bottom: 15px; /* Space between image and text */
-    transform: none; /* Remove rotation for mobile */
+    display: flex;
+    flex-direction: column; /* Stack image and blockquote vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    transform: none; /* Remove any rotations */
+    padding: 0; /* Reset any padding if necessary */
   }
 
   .server-description-image-content img {
-    height: auto; /* Adjust height based on width */
-    max-width: 80%; /* Reduce image size */
-    margin: auto; /* Center image */
+    width: 100%; /* Adjust the width of the image */
+    margin-bottom: 10px; /* Space between the image and the blockquote */
   }
 
   .server-description-image-content blockquote {
-    margin-top: 0; /* Remove margin */
-    padding: 0 10px; /* Add padding */
+    width: 90%; /* Adjust the width of the blockquote */
+    margin: 0; /* Reset margins */
+    padding: 0 10px; /* Add padding for better text alignment */
+    text-align: center; /* Ensure text is centered */
   }
 }
 
