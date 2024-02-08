@@ -3,6 +3,7 @@ import React from "react";
 import "./Header.css";
 import logo from "./nbazone.png"; // Your logo path
 import discordIcon from "./discordlogo.png"; // Your discord icon path
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -11,8 +12,12 @@ function Header() {
         <img src={logo} alt="NBA Zone Logo" className="logo" />
       </div>
       <nav className="navigation">
-        <button className="nav-button">Home</button>
-        <button className="nav-button">NBA Live</button>
+        <Link to="/" className="nav-button">
+          Home
+        </Link>
+        <Link to="/staff" className="nav-button">
+          Staff
+        </Link>
         <button className="nav-button">NBA Scores</button>
         <button className="nav-button">NBA Legends</button>
         <button className="nav-button">NBA Merch</button>

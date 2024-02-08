@@ -50,6 +50,7 @@
   font-weight: 800; /* Extra bold weight */
   font-size: 19px; /* Size of the font */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
 }
 
 .nav-button:hover {
